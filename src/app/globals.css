@@ -24,3 +24,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ghost box hover effect for navigation */
+.ghost-box {
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin: 0 2px;
+}
+
+.ghost-box:hover {
+  background-color: rgba(59, 130, 246, 0.15);
+}
