@@ -19,24 +19,25 @@ const translations = {
         "nav.contact": "Liên Hệ",
 
         // Hero
-        "hero.badge": "Sẵn Sàng Đổi Mới",
-        "hero.title": "Kỹ Sư Phần Mềm",
-        "hero.subtitle": "Tương Lai",
-        "hero.description": "Sinh viên mới tốt nghiệp với nền tảng vững chắc về Java và C#. Tôi xây dựng các giải pháp hiệu quả, có khả năng mở rộng và mong muốn đóng góp vào các dự án có ý nghĩa.",
+        "hero.badge": "Sẵn sàng cho các dự án mới",
+        "hero.title": "CODE THE VIBE,",
+        "hero.subtitle": "BUILD THE",
+        "hero.title2": "APP.",
+        "hero.description": "Đam mê phần mềm là khi bạn nhìn thấy một vấn đề và thay vì than phiền, bạn nghĩ ngay đến việc viết một hàm để giải quyết nó.",
         "hero.viewProjects": "Xem Dự Án",
         "hero.contactMe": "Liên Hệ Với Tôi",
 
         // About
         "about.title": "Về",
-        "about.developer": "Lập Trình Viên",
+        "about.developer": "bản thân",
         "about.description": "Tôi là một sinh viên mới tốt nghiệp đam mê phát triển phần mềm, đặc biệt là Java và C#. Tôi đang tích cực tìm kiếm cơ hội để áp dụng kỹ năng của mình vào việc xây dựng các ứng dụng mạnh mẽ. Trọng tâm của tôi là viết mã sạch, hiệu quả và liên tục học hỏi công nghệ mới.",
         "about.yearsExp": "Năm Kinh Nghiệm",
         "about.projectsCompleted": "Dự Án Hoàn Thành",
         "about.coreSkill": "Kỹ Năng Cốt Lõi",
 
         // Skills
-        "skills.title": "Kỹ Năng",
-        "skills.technical": "Chuyên Môn",
+        "skills.title": "lập trình",
+        "skills.technical": "Kỹ năng",
 
         // Skill Categories & Items
         "skills.cat.languages": "Ngôn ngữ",
@@ -61,20 +62,15 @@ const translations = {
         "skills.item.ocr": "OCR",
 
         // Projects
-        "projects.title": "Dự Án",
-        "projects.featured": "Nổi Bật",
+        "projects.title": "cá nhân",
+        "projects.featured": "Dự án",
         "projects.viewCode": "Xem Code",
         "projects.liveDemo": "Demo Trực Tiếp",
 
         // Contact
-        "contact.title": "Liên Hệ",
-        "contact.getInTouch": "Kết Nối",
-        "contact.text": "Tôi luôn mở lòng với những cơ hội mới. Hãy liên hệ qua email hoặc mạng xã hội.",
-        "contact.email": "Email",
-        "contact.facebook": "Facebook",
-        "contact.btn": "Gửi Tin Nhắn",
-        "contact.lets": "Hãy",
-        "contact.connect": "Kết Nối",
+        "contact.title": "Hãy cùng tạo ra",
+        "contact.subtitle": "điều gì đó tuyệt vời.",
+        "contact.quote": "Xây dựng ứng dụng trong chớp mắt, vì tôi Code bằng Vibe, không chỉ bằng tay.",
         "contact.location": "Địa Chỉ",
         "contact.form.name": "Tên",
         "contact.form.email": "Email",
@@ -97,24 +93,25 @@ const translations = {
         "nav.contact": "Contact",
 
         // Hero
-        "hero.badge": "Ready to Innovate",
-        "hero.title": "Aspiring Software",
-        "hero.subtitle": "Engineer",
-        "hero.description": "Fresh graduate with a strong foundation in Java and C#. I build efficient, scalable solutions and am eager to contribute to impactful projects.",
+        "hero.badge": "READY FOR NEW PROJECTS",
+        "hero.title": "CODE THE VIBE,",
+        "hero.subtitle": "BUILD THE",
+        "hero.title2": "APP.",
+        "hero.description": "Software passion occurs when you see a problem and, instead of complaining, you immediately think of writing a function to solve it.",
         "hero.viewProjects": "View Projects",
         "hero.contactMe": "Contact Me",
 
         // About
-        "about.title": "About the",
-        "about.developer": "Developer",
+        "about.title": "About",
+        "about.developer": "myself",
         "about.description": "I'm a recent graduate passionate about software development, specifically in Java and C#. I am actively seeking opportunities to apply my skills in building robust applications. My focus is on writing clean, efficient code and continuously learning new technologies.",
         "about.yearsExp": "Year Experience",
         "about.projectsCompleted": "Projects Completed",
         "about.coreSkill": "Core Skill",
 
         // Skills
-        "skills.title": "Technical",
-        "skills.technical": "Skills",
+        "skills.title": "skills",
+        "skills.technical": "Programming",
 
         // Skill Categories & Items
         "skills.cat.languages": "Languages",
@@ -139,20 +136,15 @@ const translations = {
         "skills.item.ocr": "OCR",
 
         // Projects
-        "projects.title": "Featured",
-        "projects.featured": "Projects",
+        "projects.title": "Projects",
+        "projects.featured": "Personal",
         "projects.viewCode": "View Code",
         "projects.liveDemo": "Live Demo",
 
         // Contact
-        "contact.title": "Get in",
-        "contact.getInTouch": "Touch",
-        "contact.text": "I'm always open to new opportunities. Reach out via email or social media.",
-        "contact.email": "Email",
-        "contact.facebook": "Facebook",
-        "contact.btn": "Send Message",
-        "contact.lets": "Let's",
-        "contact.connect": "Connect",
+        "contact.title": "Let's create",
+        "contact.subtitle": "something amazing.",
+        "contact.quote": "Building apps in a blink, because I Code with Vibe, not just by hand.",
         "contact.location": "Location",
         "contact.form.name": "Name",
         "contact.form.email": "Email",

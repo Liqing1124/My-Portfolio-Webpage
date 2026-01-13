@@ -44,9 +44,9 @@ export const Projects = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-5xl font-bold text-center mb-10 text-gray-900"
+                    className="text-4xl md:text-5xl font-extrabold text-center mb-16 tracking-tight text-gray-950 uppercase"
                 >
-                    {t("projects.featured")} <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">{t("projects.title")}</span>
+                    {t("projects.featured")} <span className="text-gray-400">{t("projects.title")}</span>
                 </motion.h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

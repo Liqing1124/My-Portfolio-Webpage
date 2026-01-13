@@ -8,64 +8,62 @@ export const Hero = () => {
     const { t } = useLanguage();
 
     return (
-        <section className="relative pt-32 pb-16 flex flex-col items-center justify-center overflow-hidden">
-            {/* Background Elements */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-                <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-purple-900/40 blur-[120px]" />
-                <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] rounded-full bg-blue-900/40 blur-[120px]" />
-                <div className="absolute top-[40%] left-[40%] w-[30%] h-[30%] rounded-full bg-cyan-900/20 blur-[100px]" />
+        <section className="relative pt-40 pb-20 px-6 max-w-6xl mx-auto overflow-hidden">
+            {/* Background Elements - Subtle */}
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+                <motion.div
+                    animate={{ x: [0, 30, 0], y: [0, 20, 0] }}
+                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                    className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-gradient-to-b from-purple-500/5 to-transparent blur-[120px]"
+                />
             </div>
 
-            <div className="container mx-auto px-4 z-10 text-center">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                className="relative z-10"
+            >
+                <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.2 }}
+                    className="inline-block px-4 py-1 rounded-full bg-gray-100 text-[10px] md:text-xs font-semibold mb-8 uppercase tracking-widest text-gray-600 transform-gpu"
+                >
+                    {t("hero.badge")}
+                </motion.span>
+
+                <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-extrabold tracking-tight leading-[0.85] mb-10 text-gray-950 transform-gpu">
+                    <span className="block">{t("hero.title")}</span>
+                    <span className="text-gray-400 block">{t("hero.subtitle")}</span>
+                    <span className="block">{t("hero.title2")}</span>
+                </h1>
+
+                <p className="text-xl md:text-2xl text-gray-500 max-w-2xl leading-relaxed mb-12 font-medium transform-gpu">
+                    {t("hero.description")}
+                </p>
+
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-600 text-sm mb-6"
-                >
-                    <Sparkles size={14} />
-                    <span>{t("hero.badge")}</span>
-                </motion.div>
-
-                <motion.h1
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-purple-700 to-purple-500 mb-6 glow-text tracking-tight pb-2"
-                >
-                    {t("hero.title")} <br /> {t("hero.subtitle")}
-                </motion.h1>
-
-                <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed"
-                >
-                    {t("hero.description")}
-                </motion.p>
-
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.6 }}
-                    className="flex flex-col sm:flex-row gap-4 justify-center"
+                    className="flex flex-wrap gap-6"
                 >
                     <a
                         href="#projects"
-                        className="px-8 py-3 rounded-full bg-gray-900 text-white font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+                        className="px-10 py-4 rounded-full bg-gray-950 text-white font-semibold hover:bg-gray-800 transition-all flex items-center justify-center gap-2 group transform-gpu"
                     >
-                        {t("hero.viewProjects")} <ArrowRight size={18} />
+                        {t("hero.viewProjects")}
+                        <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                     </a>
                     <a
                         href="#contact"
-                        className="px-8 py-3 rounded-full border border-gray-300 text-gray-700 font-semibold hover:bg-gray-100 transition-colors backdrop-blur-sm"
+                        className="px-10 py-4 rounded-full border border-gray-200 text-gray-900 font-semibold hover:bg-gray-50 transition-all backdrop-blur-sm transform-gpu"
                     >
                         {t("hero.contactMe")}
                     </a>
                 </motion.div>
-            </div>
-
+            </motion.div>
         </section>
     );
 };
