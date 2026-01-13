@@ -59,7 +59,6 @@ const translations = {
         "skills.item.vscode": "Visual Studio Code",
         "skills.item.antigravity": "Antigravity",
         "skills.item.aicoding": "AI coding",
-        "skills.item.ocr": "OCR",
 
         // Projects
         "projects.title": "cá nhân",
@@ -82,7 +81,7 @@ const translations = {
         "projects.recorder.title": "Ghi Lại Thao Tác",
         "projects.recorder.desc": "Công cụ tự động ghi và phát lại các tương tác của người dùng, hữu ích cho kiểm thử tự động và tạo macro.",
         "projects.extractor.title": "Text Extractor",
-        "projects.extractor.desc": "Công cụ mạnh mẽ giúp trích xuất văn bản từ hình ảnh hoặc vùng chụp trên màn hình bằng công nghệ OCR. Hỗ trợ phím tắt PrtSc và đa ngôn ngữ.",
+        "projects.extractor.desc": "Công cụ mạnh mẽ giúp trích xuất văn bản từ hình ảnh hoặc vùng chụp trên màn hình. Hỗ trợ phím tắt PrtSc và đa ngôn ngữ.",
     },
     en: {
         // Navbar
@@ -133,7 +132,6 @@ const translations = {
         "skills.item.vscode": "Visual Studio Code",
         "skills.item.antigravity": "Antigravity",
         "skills.item.aicoding": "AI coding",
-        "skills.item.ocr": "OCR",
 
         // Projects
         "projects.title": "Projects",
@@ -160,7 +158,7 @@ const translations = {
         "projects.recorder.title": "User Action Recorder",
         "projects.recorder.desc": "Automated tool for recording and replaying user interactions, useful for automated testing and macro creation.",
         "projects.extractor.title": "Text Extractor",
-        "projects.extractor.desc": "A powerful tool to extract text from images or screen captures using OCR technology. Supports PrtSc shortcut and multi-language recognition.",
+        "projects.extractor.desc": "A powerful tool to extract text from images or screen captures. Supports PrtSc shortcut and multi-language recognition.",
     },
 };
 

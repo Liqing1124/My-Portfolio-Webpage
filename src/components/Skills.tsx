@@ -47,7 +47,6 @@ export const Skills = () => {
             category: t("skills.cat.others"),
             items: [
                 t("skills.item.aicoding"),
-                t("skills.item.ocr"),
             ],
             icon: Layout, // Generic icon for others
         },

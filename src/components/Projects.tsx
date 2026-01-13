@@ -26,7 +26,7 @@ const projects = [
     {
         titleKey: "projects.extractor.title",
         descKey: "projects.extractor.desc",
-        tags: ["C#", "Winforms", "OCR"],
+        tags: ["C#", "Winforms"],
         color: "from-blue-500 to-cyan-700",
         image: "/text-extractor.jpg",
         github: "https://github.com/Liqing1124/Text-Extractor",
