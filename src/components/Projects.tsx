@@ -6,8 +6,8 @@ import { useLanguage } from "@/context/LanguageContext";
 
 const projects = [
     {
-        title: "Task Management",
-        description: "A comprehensive task tracking application designed to streamline personal productivity and project workflows.",
+        titleKey: "projects.task.title",
+        descKey: "projects.task.desc",
         tags: ["Java", "Spring Boot", "MySQL"],
         color: "from-green-500 to-emerald-700",
         image: "/task-management.jpg",
@@ -15,8 +15,8 @@ const projects = [
         demo: "#"
     },
     {
-        title: "User Action Recorder",
-        description: "Automated tool for recording and replaying user interactions, useful for automated testing and macro creation.",
+        titleKey: "projects.recorder.title",
+        descKey: "projects.recorder.desc",
         tags: ["C#", ".NET", "Windows API"],
         color: "from-purple-500 to-indigo-700",
         image: "/action-recorder.jpg",
@@ -24,21 +24,18 @@ const projects = [
         demo: "#"
     },
     {
-        title: "Text Extractor",
-        description: "Efficient utility to extract text from various file formats and images using OCR technologies.",
-        tags: ["Python", "OCR", "Image Processing"],
+        titleKey: "projects.extractor.title",
+        descKey: "projects.extractor.desc",
+        tags: ["C#", "Winforms", "OCR"],
         color: "from-blue-500 to-cyan-700",
         image: "/text-extractor.jpg",
         github: "https://github.com/Liqing1124/Text-Extractor",
-        demo: "https://example.com/text-extractor-demo"
+        demo: "#"
     }
 ];
 
 export const Projects = () => {
     const { t } = useLanguage();
-
-    // Note: Project descriptions are currently hardcoded in English/Vietnamese mix or just English.
-    // Ideally these should also be in the translation file, but for now we'll update the UI labels.
 
     return (
         <section id="projects" className="py-20 relative z-10">
@@ -66,7 +63,7 @@ export const Projects = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
                                 <img
                                     src={project.image}
-                                    alt={project.title}
+                                    alt={t(project.titleKey)}
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                                 />
                                 <div className="absolute bottom-4 left-4 z-20">
@@ -78,10 +75,10 @@ export const Projects = () => {
 
                             <div className="p-6">
                                 <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-purple-500 transition-colors">
-                                    {project.title}
+                                    {t(project.titleKey)}
                                 </h3>
-                                <p className="text-gray-600 dark:text-gray-200 mb-6 line-clamp-2">
-                                    {project.description}
+                                <p className="text-gray-600 dark:text-gray-200 mb-6">
+                                    {t(project.descKey)}
                                 </p>
 
                                 <div className="flex flex-wrap gap-2 mb-6">
@@ -105,15 +102,17 @@ export const Projects = () => {
                                         <Github size={18} />
                                         {t("projects.viewCode")}
                                     </a>
-                                    <a
-                                        href={project.demo}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
-                                    >
-                                        <ExternalLink size={18} />
-                                        {t("projects.liveDemo")}
-                                    </a>
+                                    {project.demo !== "#" && (
+                                        <a
+                                            href={project.demo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
+                                        >
+                                            <ExternalLink size={18} />
+                                            {t("projects.liveDemo")}
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </motion.div>

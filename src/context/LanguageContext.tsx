@@ -58,6 +58,7 @@ const translations = {
         "skills.item.vscode": "Visual Studio Code",
         "skills.item.antigravity": "Antigravity",
         "skills.item.aicoding": "AI coding",
+        "skills.item.ocr": "OCR",
 
         // Projects
         "projects.title": "Dự Án",
@@ -79,9 +80,13 @@ const translations = {
         "contact.form.email": "Email",
         "contact.form.message": "Tin Nhắn",
         "contact.form.send": "Gửi Tin Nhắn",
-        "contact.placeholder.name": "Tên của bạn",
-        "contact.placeholder.email": "email@cua.ban",
-        "contact.placeholder.message": "Hãy kể về dự án của bạn...",
+        // Projects Details
+        "projects.task.title": "Quản Lý Công Việc",
+        "projects.task.desc": "Ứng dụng theo dõi nhiệm vụ toàn diện được thiết kế để tối ưu hóa năng suất cá nhân và quy trình làm việc của dự án.",
+        "projects.recorder.title": "Ghi Lại Thao Tác",
+        "projects.recorder.desc": "Công cụ tự động ghi và phát lại các tương tác của người dùng, hữu ích cho kiểm thử tự động và tạo macro.",
+        "projects.extractor.title": "Text Extractor",
+        "projects.extractor.desc": "Công cụ mạnh mẽ giúp trích xuất văn bản từ hình ảnh hoặc vùng chụp trên màn hình bằng công nghệ OCR. Hỗ trợ phím tắt PrtSc và đa ngôn ngữ.",
     },
     en: {
         // Navbar
@@ -131,6 +136,7 @@ const translations = {
         "skills.item.vscode": "Visual Studio Code",
         "skills.item.antigravity": "Antigravity",
         "skills.item.aicoding": "AI coding",
+        "skills.item.ocr": "OCR",
 
         // Projects
         "projects.title": "Featured",
@@ -155,6 +161,14 @@ const translations = {
         "contact.placeholder.name": "Your Name",
         "contact.placeholder.email": "your@email.com",
         "contact.placeholder.message": "Tell me about your project...",
+
+        // Projects Details
+        "projects.task.title": "Task Management",
+        "projects.task.desc": "A comprehensive task tracking application designed to streamline personal productivity and project workflows.",
+        "projects.recorder.title": "User Action Recorder",
+        "projects.recorder.desc": "Automated tool for recording and replaying user interactions, useful for automated testing and macro creation.",
+        "projects.extractor.title": "Text Extractor",
+        "projects.extractor.desc": "A powerful tool to extract text from images or screen captures using OCR technology. Supports PrtSc shortcut and multi-language recognition.",
     },
 };
 
