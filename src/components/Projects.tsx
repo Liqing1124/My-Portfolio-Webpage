@@ -38,13 +38,13 @@ export const Projects = () => {
     const { t } = useLanguage();
 
     return (
-        <section id="projects" className="py-20 relative z-10">
+        <section id="projects" className="py-12 relative z-10">
             <div className="container mx-auto px-4">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900 dark:text-white"
+                    className="text-4xl md:text-5xl font-bold text-center mb-10 text-gray-900"
                 >
                     {t("projects.featured")} <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">{t("projects.title")}</span>
                 </motion.h2>
@@ -57,7 +57,7 @@ export const Projects = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className="glass-card rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 border border-gray-200 dark:border-white/10 group"
+                            className="glass-card rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 border border-gray-200 group"
                         >
                             <div className="relative overflow-hidden h-48">
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
@@ -74,10 +74,10 @@ export const Projects = () => {
                             </div>
 
                             <div className="p-6">
-                                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-purple-500 transition-colors">
+                                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-purple-500 transition-colors">
                                     {t(project.titleKey)}
                                 </h3>
-                                <p className="text-gray-600 dark:text-gray-200 mb-6">
+                                <p className="text-gray-600 mb-6">
                                     {t(project.descKey)}
                                 </p>
 
@@ -85,7 +85,7 @@ export const Projects = () => {
                                     {project.tags.map((tag, i) => (
                                         <span
                                             key={i}
-                                            className="px-2 py-1 text-xs rounded-md bg-gray-100 dark:bg-white/5 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-white/5"
+                                            className="px-2 py-1 text-xs rounded-md bg-gray-100 text-gray-600 border border-gray-200"
                                         >
                                             {tag}
                                         </span>
@@ -97,7 +97,7 @@ export const Projects = () => {
                                         href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
+                                        className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-purple-500 transition-colors"
                                     >
                                         <Github size={18} />
                                         {t("projects.viewCode")}
@@ -107,7 +107,7 @@ export const Projects = () => {
                                             href={project.demo}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-purple-500 dark:hover:text-purple-400 transition-colors"
+                                            className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-purple-500 transition-colors"
                                         >
                                             <ExternalLink size={18} />
                                             {t("projects.liveDemo")}
