@@ -14,6 +14,7 @@ export const Skills = () => {
                 t("skills.item.java"),
                 t("skills.item.csharp"),
                 t("skills.item.htmlcss"),
+                t("skills.item.nextjs"),
             ],
             icon: Code,
         },
@@ -30,6 +31,7 @@ export const Skills = () => {
             items: [
                 t("skills.item.springboot"),
                 t("skills.item.winforms"),
+                t("skills.item.tailwindcss"),
             ],
             icon: Cpu, // Changed icon to fit frameworks better or reuse Cpu/Server
         },
