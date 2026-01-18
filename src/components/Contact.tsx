@@ -63,7 +63,7 @@ export const Contact = () => {
                     </div>
 
                     <p className="mt-32 text-gray-400 text-[10px] uppercase tracking-[0.5em] opacity-60">
-                        © 2026 LIQING — MADE WITH PASSION
+                        © 2026 L.D.Chinh — MADE WITH PASSION
                     </p>
                 </motion.div>
             </div>

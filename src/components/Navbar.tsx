@@ -24,7 +24,7 @@ export const Navbar = () => {
         >
             <div className="pointer-events-auto">
                 <a href="#" className="text-2xl font-black tracking-tighter text-gray-950 hover:opacity-70 transition-opacity">
-                    LIQING<span className="text-purple-600">.</span>
+                    L.D.Chinh<span className="text-purple-600">.</span>
                 </a>
             </div>
 
